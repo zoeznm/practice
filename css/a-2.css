@@ -14,14 +14,14 @@ li {
 }
 main {
   width: 1200px;
-  background-color: lightslategray;
+  background-color: #ffffff;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
 header {
   position: relative;
-  background-color: green;
+  background-color: lightcyan;
   width: 100%;
   height: 100px;
   display: flex;
@@ -73,4 +73,136 @@ header {
 }
 .submenu > ul > li:hover {
   background-color: lightgreen;
+}
+/* .slide {
+  position: relative;
+  width: 1200px;
+  height: 300px;
+  overflow: hidden;
+}
+.slide > a >img {
+  position: absolute;
+  height: 100%;
+} */
+#index_01{
+  width: 1200px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+#slide1{
+  height: 300px;
+  overflow: hidden;
+}
+#slide1>ul{
+  width: 3600px;
+  font-size: 0;
+}
+#slide1>ul>li{
+  display: inline-block;
+  font-size: 0;
+}
+.imgtext {
+background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 10px;
+  z-index: 1;
+}
+
+
+.contents {
+  position: relative;
+  width: 1200px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.contents div {
+  width: 33.3%;
+}
+.notice > a {
+  text-align: center;
+
+  background-color: #eeeeee;
+  width: 85px;
+  padding: 6px;
+}
+
+
+.notice > ul {
+  background-color: lightgoldenrodyellow;
+  height: 168px;
+}
+.notice > ul > li {
+  padding: 10px;
+}
+.notice > ul > li:nth-child(even) {
+  background-color: lightblue;
+}
+.notice > ul > li:hover {
+  background-color: lightskyblue;
+}
+.noticetext{
+  float: right;
+}
+.gallery {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  background-color: lightgoldenrodyellow;
+  height: 168px;
+  left: 35.5%;
+}
+.gallery > a {
+  position: absolute;
+  top: -32px;
+  text-align: center;
+  background-color: #eeeeee;
+  width: 85px;
+  padding: 6px;
+
+}
+.gallery > div {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  height: 110px;
+}
+.gallery > div > img:nth-child(1) {
+width: 110px;
+height: 110px;
+position: absolute;
+top: 30px;
+left: 10px;
+}
+.gallery > div > img:nth-child(2) {
+  width: 110px;
+height: 110px;
+  position: absolute;
+  top: 30px;
+  left: 145px;
+  }
+  .gallery > div > img:nth-child(3) {
+    width: 110px;
+  height: 110px;
+    position: absolute;
+    top: 30px;
+    left: 280px;
+    }
+    .gallery > div > img:hover {
+      opacity: 40%;
+    }
+   .banner {
+    position: absolute;
+    right: -49px;
+   } 
+
+footer {
+  width: 1200px;
+  height: 100px;
+  background-color: lightskyblue;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }

@@ -14,3 +14,21 @@ window.onload = function() {
     submenu.style.height = '0';
   };
 };
+setInterval(function(){
+  $('#slide1>ul').delay(3000);
+  $('#slide1>ul').animate({marginLeft: "-1200px"})
+  $('#slide1>ul').delay(3000);
+  $('#slide1>ul').animate({marginLeft: "-2400px"})
+  $('#slide1>ul').delay(3000);
+  $('#slide1>ul').animate({marginLeft: "0px"})
+});
+
+
+
+
+
+
+
+
+
+
