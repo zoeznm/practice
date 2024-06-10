@@ -36,7 +36,7 @@ header {
   width: 200px;
   height: 40px;
 }
-.mainmenu {
+.mainMenu {
   background-color: lightgreen;
   position: absolute;
   width: 800px;
@@ -47,31 +47,34 @@ header {
   right: 20px;
   bottom: 0;
 }
-.mainmenu a {
+.mainMenu a {
   background-color: lightblue;
   width: 25%;
  padding: 10px;
 }
-.mainmenu a:hover {
+.mainMenu a:hover {
   background-color: lemonchiffon;
 }
-.submenu {
+.subMenu {
   background-color: lightskyblue;
   position: absolute;
   top: 39px;
   display: flex;
   width: 800px;
   justify-content: space-between;
+  z-index: 1;
 
 }
-.submenu > ul {
+.subMenu > ul {
   width: 25%;
   text-align: center;
+  z-index: 1;
 }
-.submenu > ul > li {
+.subMenu > ul > li {
   padding: 20px 0;
+  z-index: 1;
 }
-.submenu > ul > li:hover {
+.subMenu > ul > li:hover {
   background-color: lightgreen;
 }
 /* .slide {
@@ -84,30 +87,23 @@ header {
   position: absolute;
   height: 100%;
 } */
-#index_01{
-  width: 1200px;
-  height: 300px;
-  margin: 0 auto;
-}
-
-#slide1{
+.section_1 {
+  width: 100%;
   height: 300px;
   overflow: hidden;
+  position: relative;
 }
-#slide1>ul{
+.img_box {
   width: 3600px;
-  font-size: 0;
-}
-#slide1>ul>li{
-  display: inline-block;
-  font-size: 0;
-}
-.imgtext {
-background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px 10px;
-  z-index: 1;
+  height: 100%;
+  position: absolute;
+  display: flex;
 }
 
+.img_box > a > img {
+  width: 1200px;
+  height: 100%;
+}
 
 .contents {
   position: relative;
