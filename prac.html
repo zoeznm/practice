@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    #root {
+      width: 1200px;
+      height: 700px;
+      overflow: hidden;
+      background-color: lightgoldenrodyellow;
+      margin: 0 auto;
+    }
+    header {
+      position: relative;
+      width: inherit;
+      height: 100px;
+      background-color: lightblue;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header > div:nth-child(1) {
+      width: 200px;
+      height: 40px;
+      background-color: white;
+      text-align: center;
+    }
+    header > div:nth-child(2) {
+      position: absolute;
+      right: 0;
+      width: 800px;
+      height: 500px;
+      top: 50px;
+    }
+    #root > header > div:nth-child(2):hover {
+      background-color: lightgreen;
+      height: 500px;
+      transition: height 1s ease-in-out;
+
+    }
+    #root > header > div:nth-child(2):not(:hover) {
+      background-color: lightgray;
+      height: 40px;
+      transition: height 1s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <header>
+      <div>
+        logo
+      </div>
+      <div>
+        menu
+      </div>
+    </header>
+  </div>
+</body>
+</html>
