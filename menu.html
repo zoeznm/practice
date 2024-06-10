@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery-1.12.3.js"></script>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      list-style: none;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      color: black;
+    }
+    main {
+      width: 1200px;
+      height: 700px;
+      background-color: lightgray;
+      margin: 0 auto;
+    }
+    header {
+      position: relative;
+      width: 1200px;
+      height: 100px;
+      background-color: lightgoldenrodyellow;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .mainmenu {
+
+      display: flex;
+      width: 800px;
+      height: 100px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .mainmenu a {
+      width: 25%;
+      padding: 20px;
+      text-align: center;
+    }
+    .mainmenu > a:hover {
+      background-color: lightgreen;
+      color: whitesmoke;
+    }
+    .submenu {
+      display: flex;
+      position: absolute;
+      top: 100px;
+      text-align: center;
+      width: 800px;
+      justify-content: space-between;
+      background-color: lightblue;
+    }
+    .submenu > ul  {
+      width: 25%;
+    }
+    .submenu li {
+      padding: 20px 0;
+    }
+    .submenu li:hover {
+      background-color: lightseagreen;
+      color: whitesmoke;
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+  <header>
+    <a href="#">
+      <img src="img/logo.png" alt="logo">
+    </a>
+    <nav class="mainmenu">
+      <a href="#">탑</a>
+      <a href="#">아우터</a>
+      <a href="#">팬츠</a>
+      <a href="#">악세서리</a>
+      <nav class="submenu">
+        <ul>
+          <li>반팔티</li>
+          <li>긴팔티</li>
+          <li>셔츠</li>
+          <li>니트</li>
+        </ul>
+        <ul>
+          <li>가죽자켓</li>
+          <li>해피홈</li>
+          <li>리뉴보존액</li>
+          <li>온아워</li>
+        </ul>
+        <ul>
+          <li>지금</li>
+          <li>나는</li>
+          <li>된장찌개가</li>
+          <li>먹고싶다</li>
+        </ul>
+        <ul>
+          <li>나는</li>
+          <li>지금</li>
+          <li>너무</li>
+          <li>배고프다.</li>
+        </ul>
+      </nav>
+    </nav>
+  </header>
+  </main>
+  <script>
+    $(document).ready(function(){
+  // 서브메뉴 숨기고 시작.
+  $('.submenu').hide();
+// 마우스오버 메뉴
+  $('nav').mouseover(function(){
+    $('.submenu').stop().slideDown(300);
+  }).mouseout(function(){
+    $('.submenu').stop().slideUp(300);
+  });
+});
+  </script>
+</body>
+</html>
