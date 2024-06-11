@@ -1,0 +1,169 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+}
+li {
+  list-style: none;
+}
+
+main {
+  width: 1200px;
+  height: 700px;
+  overflow: hidden;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+header {
+  width: inherit;
+  height: 100px;
+  background-color: lightgoldenrodyellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+padding-left: 20px;
+}
+.logo > img {
+  width: 200px;
+  height: 40px;
+}
+.mainMenu {
+  position: relative;
+  width: 800px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.mainMenu a {
+  padding: 20px 0;
+  width: 25%;
+  height: 100%;
+  text-align: center;
+}
+.mainMenu a:hover {
+  background-color: #ffffff;
+  color: #333333;
+}
+.subMenu {
+  width: 800px;
+  position: absolute;
+  top: 79px;
+  display: flex;
+  z-index: 1;
+  background-color: #ffffff;
+  color: #333333;
+}
+.subMenu  ul {
+  width: 25%;
+  text-align: center;
+}
+.subMenu > ul > li {
+  padding: 20px 0;
+}
+.subMenu > ul > li:hover {
+  background-color: lightgoldenrodyellow;
+  color: #333333;
+}
+.slide {
+  position: relative;
+  width: 1200px;
+  height: 300px;
+  overflow: hidden;
+}
+.slide > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slide > a >img {
+  height: 100%;
+}
+.imgtext {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  padding: 20px 10px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.contents {
+  overflow: hidden;
+  position: absolute;
+  width: 1200px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.contents div {
+  width: 33.3%;
+}
+.tabMenu {
+  display: flex;
+}
+.tabMenu > li > a {
+  margin: 10px 0;
+  padding: 0px 8px;
+  background-color: #eeeeee;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+.tabMenu > li > a:hover {
+  background-color: #ffffff;
+  color: #222322;
+}
+.tabMenu > li:first-child > a {
+  border-right:none ;
+}
+.tabMenu > li.active > a {
+  background-color: lightgoldenrodyellow;
+  color: #222322;
+}
+.tabBG {
+  top: 40px;
+  height: 168px;
+  background-color: #ffffff;
+  position: absolute;
+  overflow: hidden;
+
+}
+.tabMenu > li.active div  {
+  border: 1px solid #dddddd;
+  z-index: 1;
+}
+.notice > ul  {
+  margin: 10px 0;
+}
+.notice > ul > li {
+  padding: 8px 20px;
+}
+.notice > ul > li:nth-child(even) {
+  background-color: rgba(120, 200, 0, 0.4);
+}
+.notice > ul > li:hover {
+  background-color: rgba(120, 200, 0, 0.7);
+}
+.notice > ul > li > a > span {
+  float: right;
+}
+.gallery {
+  left: 0;
+}
+.gallery > ul {
+  justify-content: space-around;
+}
+.gallery > ul > li img:hover {
+  opacity: 0.5;
+}
