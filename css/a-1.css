@@ -103,7 +103,7 @@ padding-left: 20px;
   height: 200px;
   display: flex;
   justify-content: space-between;
-  background-color: #ffffff;
+
 }
 .contents div {
   width: 33.3%;
@@ -217,4 +217,40 @@ top: 600px;
 }
 .sns > a {
   padding-right: 6px;
+}
+#modalWrap.active{
+  display:block;
+}
+#modalWrap {
+  display: none;
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  background-color: #ffffff;
+  border: 2px solid #dddddd;
+  left: 35%;
+  top: 25%;
+  z-index: 1;
+}
+.modal > h1 {
+font-size: 20px;
+font-weight: bold;
+text-align: center;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.modal > p {
+  text-align: center;
+  line-height: 30px;
+}
+.btn {
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  left: 42%;
+  top: 75%;
+  background-color: lightgoldenrodyellow;
+  border: none;
+  border: 2px solid #dddddd;
+  cursor: pointer;
 }

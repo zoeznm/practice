@@ -22,4 +22,10 @@ $(function(){
   });
 });
 // ! 모달창 
+$('.notice li:first').click(function(){
+  $('#modalWrap').addClass("active");
+});
+$('.btn').click(function(){
+  $('#modalWrap').removeClass("active");
+});
 });
