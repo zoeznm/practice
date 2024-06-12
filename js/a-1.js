@@ -10,10 +10,11 @@ $(".mainMenu").mouseover(function(){
 $(".slide > a:gt(0)").hide();
 
 setInterval(function(){
-  $('.slide a:first-child').fadeOut()
-  .next('a').fadeIn()
+  $('.slide li:first-child').fadeOut()
+  .next('li').fadeIn()
   .end().appendTo('.slide');
 }, 3000);
+
 // ! 탭메뉴
 $(function(){
   $(".tabMenu > li > a").click(function(){

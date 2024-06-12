@@ -1,29 +1,33 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    *{
+      list-style: none;
+      
+    }
     .main {
       width: 1200px;
       height: 300px; 
       position: relative;
       overflow: hidden;
     }
-    .imgbox {
+    .slide {
       display: flex;
       width: 3600px;
       position: absolute;
 
     }
-    .imgbox a {
+    .slide a {
       width: 1200px;
       height: 300px;
       position: relative;
       display: block;
     }
-    .imgbox img {
+    .slide img {
       width: 100%;
       height: 100%;
       display: block;
@@ -42,25 +46,31 @@
 </head>
 <body>
   <div class="main">
-    <div class="imgbox">
-      <a href="#">
-        <img src="img/slide1.jpg" alt="slide1">
-        <span class="imgtext">김보미 24세이다.</span>
-      </a>
-      <a href="#">
-        <img src="img/slide2.jpg" alt="slide2">
-        <span class="imgtext">김보미 36세이다.</span>
-      </a>
-      <a href="#">
-        <img src="img/slide3.jpg" alt="slide3">
-        <span class="imgtext">김보미 48세이다.</span>
-      </a>
-    </div>
+    <ul class="slide">
+      <li>
+        <a href="#">
+          <img src="img/slide1.jpg" alt="slide1">
+          <span class="imgtext">김보미 24세이다.</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/slide2.jpg" alt="slide2">
+          <span class="imgtext">김보미 36세이다.</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/slide3.jpg" alt="slide3">
+          <span class="imgtext">김보미 48세이다.</span>
+        </a>
+      </li>
+    </ul>
   </div>
   <script>
     $(document).ready(function(){
       setInterval(function(){
-        $('.imgbox').animate({left: '-1200px'}, 1000, function(){
+        $('.slide').animate({left: '-1200px'}, 1000, function(){
           $(this).css({left: 0}).append($(this).find('a:first'));
         });
       }, 3000);
@@ -68,7 +78,7 @@
   </script>
 </body>
 </html>
-<!--! 이건 상하로 연습 움직이는 코드 
+<!--
   <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="ko">
@@ -154,5 +164,5 @@
 </body>
 </html>
 
-
-  --!>
+ 
+-->
