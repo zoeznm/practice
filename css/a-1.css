@@ -160,10 +160,61 @@ padding-left: 20px;
 }
 .gallery {
   left: 0;
+  display: flex;
 }
 .gallery > ul {
   justify-content: space-around;
+  display: flex;
+  margin: 15px 0;
 }
 .gallery > ul > li img:hover {
   opacity: 0.5;
+}
+.banner > a > img {
+  position: absolute;
+  left: 450px;
+}
+.banner > a > span {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  color: #ffffff;
+  top: 45%;
+  left: 50%;
+}
+.direct > a > img {
+  position: absolute;
+right: 0;
+}
+.direct > a > span {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  color: #ffffff;
+  top: 45%;
+  left: 81%;
+}
+footer {
+  width: 1200px;
+  height: 100px;
+
+position: absolute;
+top: 600px;
+  display: flex;
+  background-color: lightgoldenrodyellow;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo2 > a  {
+  padding-left: 20px;
+}
+.logo2 > a > img {
+  width: 200px;
+  height: 40px;
+}
+.sns {
+  display: flex;
+}
+.sns > a {
+  padding-right: 6px;
 }
