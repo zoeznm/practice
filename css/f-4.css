@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/*reset*/
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ol, ul, li { list-style-type: none;}
+a{text-decoration: none; color: #333;}
+html, body {font-size: 15px; background-color: #fff; color: #333;}
+button {  border: 0; display: block; }
+
+
+.flx { display: flex; }
+.center { align-items: center; }
+.j_center { justify-content: center; }
+.spc_btw { justify-content: space-between;}
+.flx_st { justify-content: flex-start; }
+.flx_end { justify-content: flex-end; }
+.col { flex-direction: column;}
+.hidden { font-size: 1px; width: 1px; height: 1px; text-indent: -999999px; overflow: hidden; }
+
+.wrap{ width: 100vw; height: 100vh; position: relative; }
+
+/*header*/
+#header { width: 100%; height: 100px; position: relative; border-bottom: 1px solid #eee; }
+#header .h_container { width: 1340px; height: 100px; margin: 0 auto; }
+#header .h_container > a { display: inline-block; width: 190px; height: 44px; margin-top: 20px; }
+#header .h_container nav { line-height: 100px; }
+#header .h_container nav > ul { margin-top: 52px; }
+#header .h_container nav li { width: 150px; height: 48px; line-height: 48px; }
+#header .h_container nav li a { display: block; width: 100%; height: 100%; font-size: 17px; text-align: center; }
+#header .h_container nav li a:hover { background: #e31a40; color: #Fff; font-weight: bold; }
+#header .h_container .sub_menu { display: none; background-color: #fff; position: absolute; top: 100px; left: 0; width: 100%; padding: 0 290px; }
+#header .h_container .sub_menu .sub_wrap { width: 1340px; }
+
+
+/*main*/
+#main .m_container .slide { width: 100%; height: 350px; overflow: hidden; }
+#main .m_container .slide li { height: 350px; }
+#main .conts { position: relative; width: 1340px; margin: 0 auto; }
+#main .conts .direct { position: absolute; top: -80px; width: 100%; height: 80px; left: 0; background: #e31a40; color: #fff; }
+#main .conts .direct li { width: 20%; cursor: pointer; }
+#main .conts .direct li span { margin-left: 6px; }
+#main .conts .banner { height: 180px; }
+#main .conts .banner > div { padding-left: 50px; }
+#main .conts .banner h3 { font-size: 18px; line-height: 38px; }
+#main .conts .banner span { color: #bbb; line-height: 32px; }
+#main .conts .board { background: rgba(0, 0, 0, 0.1); }
+#main .conts .board > div { width: 50%; }
+#main .conts .notice h4,
+#main .conts .gallery h4 { width: 100px; height: 32px; line-height: 32px; text-align: center; background-color: #e31a40; color: #fff; }
+#main .conts .notice { width: 100%;; }
+#main .conts .notice > ul> li { height: 42px; line-height: 42px; padding: 0 10px }
+/*footer*/
+#footer .f_container{ width: 1340px; height: 100px; margin: 0 auto; background-color: #454545; color: #fff; padding: 0 14px; }
+#footer .f_container .familysite select { width: 180px; height: 32px; }
+/*modal*/
+.modal { background-color: rgba(0, 0, 0, 0.3); width: 100%; height: 100%; position: absolute; top: 0; left: 0; display: none;}
+.modal .modal_cont { width: 400px; height: auto; background-color: #fff; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px 30px; }
+.modal .modal_cont .modal_tit { font-size: 18px; font-weight: bold; height: 48px; line-height: 48px; text-align: center; margin-bottom: 10px;}
+.modal .modal_cont button { border: 0; width: 150px; margin: 20px auto 0; padding: 10px 20px; background-color: #e31a40; text-align: center; color: #Fff; cursor: pointer; }
