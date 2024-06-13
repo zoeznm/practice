@@ -22,5 +22,11 @@ function start(){
   },3000);
 }
 // ! modal
+$('.noticeBG > li > a:first').click(function(){
+  $('.modalWrap').addClass("active");
+});
+$('.btn').click(function(){
+  $('.modalWrap').removeClass("active");
+});
 
 });
