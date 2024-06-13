@@ -7,6 +7,13 @@ $('.navi > li').mouseover(function(){
 });
 
 // ! 이미지 슬라이드
+$(".slide > a:gt(0)").hide();
+
+setInterval(function(){
+  $('.slide li:first-child').fadeOut()
+  .next('li').fadeIn()
+  .end().appendTo('.slide');
+}, 3000);
 
 // ! 탭메뉴
 
