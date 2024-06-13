@@ -10,9 +10,9 @@ $('.navi > li').mouseover(function(){
 $(".slide > a:gt(0)").hide();
 
 setInterval(function(){
-  $('.slide li:first-child').fadeOut()
-  .next('li').fadeIn()
-  .end().appendTo('.slide');
+  $('.slide div:first-child').fadeOut()
+  .next('div').fadeIn()
+  .end().appendTo('div');
 }, 3000);
 
 // ! 탭메뉴
